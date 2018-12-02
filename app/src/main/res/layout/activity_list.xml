@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="co.example.csilla.mobilwebhf_01.ListActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:src="@drawable/lhatter"
+            android:scaleType = "centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/list" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your FAB implementation -->
+        <co.example.csilla.mobilwebhf_01.design.Fab
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/plus"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <!-- Overlay that dims the screen -->
+        <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Circular reveal container for the sheet -->
+        <io.codetail.widget.RevealLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom"
+            android:orientation="vertical">
+
+            <!-- Sheet that contains your items -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/fab_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- Put your sheet items here -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Add alarm -->
+                    <!--   <TextView
+                        android:id="@+id/fab_sheet_item_addAlarm"
+                        style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                        android:drawableLeft="@drawable/indit"
+                        android:drawableStart="@drawable/indit"
+                        android:textColor="#FFFFFF"
+                        android:text="@string/add_alarm" /> <!-->
+
+                    <!-- Add place -->
+                    <TextView
+                        android:id="@+id/fab_sheet_item_addPlace"
+                        style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                        android:drawableLeft="@drawable/plus"
+                        android:drawableStart="@drawable/plus"
+                        android:textColor="#FFFFFF"
+                        android:text="@string/add_place" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </io.codetail.widget.RevealLinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

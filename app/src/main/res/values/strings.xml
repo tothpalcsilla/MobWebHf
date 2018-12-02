@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MobilWebHf_01</string>
+    <string name="title">GeoTimer</string>
+
+    <!--> Menu <!-->
+    <string name="option_get_place">Get place</string>
+    <string name="option_get_list">Get list</string>
+
+    <!--> Map Activity <!-->
+    <string name="title_activity_maps">GeoTimer - Map</string>
+
+    <!--> List Activity <!-->
+    <string name="title_activity_list">GeoTimer - List</string>
+    <string name="card_alarm_distance">Alardm distance: %1$s km</string>
+    <!-- Material Sheet Fab -->
+    <string name="sheet_item_pressed">Sheet Item Pressed</string>
+    <string name="add_place">Create new place</string>
+
+    <!--> Create Fragemnt <!-->
+    <string name="new_place_details">New place details</string>
+    <string name="place_name">Place name</string>
+    <string name="place_coordinates">Coordinates</string>
+    <string name="place_address">Address</string>
+    <string name="select_place">Select place</string>
+    <string name="place_alarm_distance">Alarm distance (km)</string>
+    <string name="btnOk">OK</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="errorName">Please enter the name of the place</string>
+    <string name="errorCoord">Please select a place with coordinates</string>
+    <string name="errorAlarm">Please enter the alarm distance among 1 and 50</string>
+
+</resources>

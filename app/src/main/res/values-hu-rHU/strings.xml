@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MobilWebHf_01</string>
+    <string name="title">GeoTimer</string>
+
+    <!--> Menu <!-->
+    <string name="option_get_place">Hely lekérése</string>
+    <string name="option_get_list">Lista lekérése</string>
+
+    <!--> Map Activity <!-->
+    <string name="title_activity_maps">GeoTimer - Térkép</string>
+
+    <!--> List Activity <!-->
+    <string name="title_activity_list">GeoTimer - Lista</string>
+    <string name="card_alarm_distance">Riasztási távolság: %1$s km</string>
+    <!-- Material Sheet Fab -->
+    <string name="sheet_item_pressed">Gomb megnyomva</string>
+    <string name="add_place">Új célállomás készítése</string>
+
+    <!--> Create Fragemnt <!-->
+    <string name="new_place_details">Új célállomás adatai</string>
+    <string name="place_name">Célállomás neve</string>
+    <string name="place_coordinates">Koordinátái</string>
+    <string name="place_address">Címe</string>
+    <string name="select_place">Hely kiválasztása</string>
+    <string name="place_alarm_distance">Riasztási távolság (km)</string>
+    <string name="btnOk">Mentés</string>
+    <string name="btnCancel">Mégse</string>
+    <string name="errorName">Kérem, töltse ki a célállomás nevét</string>
+    <string name="errorCoord">Kérem, válasszon egy célt, ami rendelkezik koordinátákkal</string>
+    <string name="errorAlarm">Kérem, a riasztási távolságot 1 és 50 között adja meg</string>
+
+</resources>
